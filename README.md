@@ -7,4 +7,4 @@
 `docker build -t chrome-terminal-stable .`
 
 ### Run:
-`docker build -t chrome-terminal-stable .`
+`docker run -dt --name chrome-stable -p 9222:9222 chrome-terminal-stable`
