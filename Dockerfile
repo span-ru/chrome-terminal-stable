@@ -18,6 +18,7 @@ RUN apt -y install google-chrome-stable
 
 RUN google-chrome-stable --version
 ADD start.sh import_cert.sh /usr/bin/
+RUN chmod +x /usr/bin/start.sh /usr/bin/import_cert.sh
 
 RUN mkdir /data
 VOLUME /data
